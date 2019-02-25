@@ -1,0 +1,36 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-infinite-scroller": "^1.2.4",
+    "react-scripts": "1.1.4"
+  },
+  "scripts2": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "scripts": {
+    "build-css": "node-sass src/ -o src/",
+    "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "test": "node scripts/test.js --env=jsdom"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.0",
+    "npm-run-all": "^4.1.3",
+    "qwest": "^4.5.0",
+    "react-app-rewired": "^1.5.2",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "remarkable": "^1.7.1",
+    "remarkable-react": "^1.3.1",
+    "sass-loader": "^7.0.3"
+  }
+}

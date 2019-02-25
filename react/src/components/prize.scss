@@ -1,0 +1,50 @@
+@function pxToVw($px){
+  @return ($px / 7.5px) * 1vw
+}
+
+.loader{
+  text-align: center;
+  font-size:  pxToVw(30px);
+  line-height:  pxToVw(50px);
+}
+.prize{
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+.prize ul{
+  width: 100%;
+}
+.prize ul li {
+  width: 100%;
+  height: pxToVw(104px);
+  background: #fff;
+  border-radius: pxToVw(10px);
+  margin: 0 0 pxToVw(12px) 0;
+}
+
+.prize ul li .left {
+  float: left;
+  padding: pxToVw(22px) 0 0 pxToVw(22px);
+}
+
+.prize ul li .left h3 {
+  font-size: pxToVw(30px);
+  color: #353535;
+  line-height: pxToVw(30px);
+  margin: 0 0 pxToVw(10px) 0;
+}
+
+.prize ul li .left p {
+  font-size: pxToVw(20px);
+  color: #888888;
+  line-height: pxToVw(20px);
+}
+
+.prize ul li > span {
+  float: right;
+  font-size: pxToVw(34px);
+  color: #f5936e;
+  line-height: pxToVw(104px);
+  margin: 0 pxToVw(22px) 0 0;
+}

@@ -1,0 +1,9 @@
+var handleDate = function(value) {
+    var reg = getRegExp("-","g");
+  return value.replace(reg,'.');
+}
+
+module.exports = {
+  handleDate:handleDate,
+}
+

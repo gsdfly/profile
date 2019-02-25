@@ -1,0 +1,41 @@
+.loader {
+  text-align: center;
+  font-size: 4vw;
+  line-height: 6.66667vw; }
+
+.prize {
+  width: 100%;
+  height: 100%;
+  overflow: scroll; }
+
+.prize ul {
+  width: 100%; }
+
+.prize ul li {
+  width: 100%;
+  height: 13.86667vw;
+  background: #fff;
+  border-radius: 1.33333vw;
+  margin: 0 0 1.6vw 0; }
+
+.prize ul li .left {
+  float: left;
+  padding: 2.93333vw 0 0 2.93333vw; }
+
+.prize ul li .left h3 {
+  font-size: 4vw;
+  color: #353535;
+  line-height: 4vw;
+  margin: 0 0 1.33333vw 0; }
+
+.prize ul li .left p {
+  font-size: 2.66667vw;
+  color: #888888;
+  line-height: 2.66667vw; }
+
+.prize ul li > span {
+  float: right;
+  font-size: 4.53333vw;
+  color: #f5936e;
+  line-height: 13.86667vw;
+  margin: 0 2.93333vw 0 0; }

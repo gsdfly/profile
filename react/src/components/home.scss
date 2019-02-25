@@ -1,0 +1,133 @@
+
+
+@function pxToVw($px){
+    @return ($px / 7.5px) * 1vw
+}
+
+.home{
+    width: 100%;
+    height: 100%;
+    background: #f2f2f2;
+}
+
+.header{
+    width: 100%;
+    height: pxToVw(461px);
+    background: url("http://res.catchme.com.cn/profile/imgs/bg.png") no-repeat;
+    background-size: 100% 100%;
+    padding: 0.1px;
+    position: relative;
+}
+.header .content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.header .content .mycoin{
+    width: pxToVw(240px);
+    height: pxToVw(60px);
+    background: #fff;
+    border-radius: pxToVw(30px);
+    text-align: center;
+    font-size: pxToVw(40px);
+    color: #f16319;
+    margin: pxToVw(40px) auto pxToVw(20px) auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .content .mycoin span{
+    display: inline-block;
+    width: pxToVw(48px);
+    height: pxToVw(44px);
+    background: url("http://res.catchme.com.cn/profile/imgs/icon_recharge_bi.png") no-repeat;
+    background-size: 100% 100%;
+}
+.header .content .mycoin b{
+    float: right;
+    height: pxToVw(40px);
+    line-height: pxToVw(40px);
+    margin: 0 0 0 pxToVw(8px);
+}
+
+.header .content .ticket{
+    font-size: pxToVw(28px);
+    line-height: pxToVw(28px);
+    position: relative;
+    i{
+        font-size: pxToVw(32px);
+        line-height: pxToVw(32px);
+    }
+}
+
+.header .content .content-img{
+    width: pxToVw(200px);
+    height: pxToVw(200px);
+    border: pxToVw(4px) solid #fff;
+    margin: pxToVw(30px) auto 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    /*display: none;*/
+}
+
+.header .content p{
+    font-size: pxToVw(36px);
+    color: #fff;
+    line-height: pxToVw(36px);
+    margin: pxToVw(14px) 0 0 0;
+    text-align: center;
+}
+.header .content>div img{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    padding: 0.1px pxToVw(22px) 0 pxToVw(22px);
+    height: calc(100% - 61.46667vw);
+    overflow: auto;
+}
+.main ul{
+    width: 100%;
+    margin: pxToVw(26px) 0 0 0;
+}
+.main ul li{
+    width: 100%;
+    height: pxToVw(174px);
+    background: #fff;
+    border-radius: pxToVw(10px);
+    margin: 0 0 pxToVw(12px) 0;
+}
+.main ul li img{
+    width: pxToVw(118px);
+    height: pxToVw(118px);
+    float: left;
+    margin: pxToVw(28px) 0 0 pxToVw(22px);
+}
+.main ul li p{
+    font-size: pxToVw(34px);
+    line-height: pxToVw(174px);
+    margin: 0 0 0 pxToVw(22px);
+    color: #888888;
+    float: left;
+}
+.main ul li b{
+    font-size: pxToVw(80px);
+    color: #f16319;
+    float: right;
+    line-height: pxToVw(174px);
+    margin: 0 pxToVw(24px) 0 0;
+    font-weight: 600;
+}
+.main ul li span{
+    width: pxToVw(16px);
+    height: pxToVw(28px);
+    float: right;
+    background:url("http://res.catchme.com.cn/profile/imgs/icon_go.png") no-repeat;
+    background-size: 100% 100%;
+    margin: pxToVw(73px) pxToVw(22px) 0 0;
+}
